@@ -2,9 +2,9 @@ const major = parseInt(process.versions.node.split('.')[0], 10);
 
 if (major < 20) {
   console.error(
-    `\n❌ This package requires Node.js 20+ to run reliably.\n` +
-    `   You are using Node.js ${process.versions.node}.\n` +
-    `   Please upgrade to Node.js 20+ to proceed.\n`
-  );
+  `\n❌ Paket ini memerlukan Node.js versi 20+ agar dapat berjalan dengan baik.\n` +
+  `   Saat ini Anda menggunakan Node.js versi ${process.versions.node}.\n` +
+  `   Silakan upgrade ke Node.js 20+ untuk melanjutkan.\n`
+);
   process.exit(1);
 }
